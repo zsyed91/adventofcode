@@ -11,7 +11,7 @@ class FrequencyFileParser
       unless valid_frequency_factor?(line)
         raise "Invalid frequency input line #{line_number}"
       end
-      @frequencies << line
+      @frequencies << line.to_i
     end
 
     @frequencies

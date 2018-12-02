@@ -5,6 +5,6 @@ class FrequencyExecutor
   end
 
   def evaluate
-    @frequency += @frequencies.map(&:to_i).sum
+    @frequency += @frequencies.sum
   end
 end
